@@ -1,0 +1,8 @@
+*.pyc
+__pycache__/
+*.log
+*.swp
+*.tmp
+.idea/
+.vscode/
+*.egg-info/
