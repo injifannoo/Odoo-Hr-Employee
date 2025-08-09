@@ -1,35 +1,51 @@
 <odoo>
-    <record id="view_form_hr_employee" model="ir.ui.view">
-        <field name="name">hr.employee.form</field>
-        <field name="model">hr.employee</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="age"/>
-                        <field name="department"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
+    <data>
+        <record id="view_form_hr_employee" model="ir.ui.view">
+            <field name="name">hr_system.employee.form</field>
+            <field name="model">hr_system.employee</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                            <field name="age" />
+                            <field name="department_id" />
+                            <field name="retirement_age" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
 
-    <record id="view_tree_hr_employee" model="ir.ui.view">
-        <field name="name">hr.employee.tree</field>
-        <field name="model">hr.employee</field>
-        <field name="arch" type="xml">
-            <tree>
-                <field name="name"/>
-                <field name="age"/>
-                <field name="department"/>
-            </tree>
-        </field>
-    </record>
+        <record id="view_tree_hr_employee" model="ir.ui.view">
+            <field name="name">hr_system.employee.tree</field>
+            <field name="model">hr_system.employee</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="age" />
+                    <field name="department_id" />
+                    <field name="retirement_age" />
+                </tree>
+            </field>
+        </record>
 
-    <record id="action_employee" model="ir.actions.act_window">
-        <field name="name">ITU Employees</field>
-        <field name="res_model">hr.employee</field>
-        <field name="view_mode">tree,form</field>
-    </record>
+        <!-- <record id="view_search_hr_employee" model="ir.ui.view">
+            <field name="name">hr_system.employee.search</field>
+            <field name="model">hr_system.employee</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="department_id" />
+                    <filter string="Age > 30" domain="[('age', '>', 30)]" />
+                </search>
+            </field>
+        </record> -->
+
+        <record id="action_employee" model="ir.actions.act_window">
+            <field name="name">ITU Employees</field>
+            <field name="res_model">hr_system.employee</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
 </odoo>
