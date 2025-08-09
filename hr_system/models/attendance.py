@@ -5,6 +5,6 @@
 #     _name = 'x_hr.attendance'
 #     _description = 'Attendance'
 
-#     employee_id = fields.Many2one('hr.employee', required=True)
+#     employee_id = fields.Many2one('hr_system.employee', required=True)
 #     check_in = fields.Datetime(default=lambda self: fields.Datetime.now())
 #     check_out = fields.Datetime()
