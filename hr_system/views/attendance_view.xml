@@ -1,0 +1,38 @@
+<!-- <odoo>
+    <data>
+        <record id="view_form_x_hr_attendance" model="ir.ui.view">
+            <field name="name">x_hr.attendance.form</field>
+            <field name="model">x_hr.attendance</field>
+            <field name="arch" type="xml">
+                <form string="Attendance">
+                    <sheet>
+                        <group>
+                            <field name="employee_id" />
+                            <field name="check_in" />
+                            <field name="check_out" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tree_x_hr_attendance" model="ir.ui.view">
+            <field name="name">x_hr.attendance.tree</field>
+            <field name="model">x_hr.attendance</field>
+            <field name="arch" type="xml">
+                <tree string="Attendance Records">
+                    <field name="employee_id" />
+                    <field name="check_in" />
+                    <field name="check_out" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_x_hr_attendance" model="ir.actions.act_window">
+            <field name="name">Attendance Records</field>
+            <field name="res_model">x_hr.attendance</field>
+            <field name="view_mode">tree,form</field>
+            <field name="target">current</field>
+        </record>
+    </data>
+</odoo> -->

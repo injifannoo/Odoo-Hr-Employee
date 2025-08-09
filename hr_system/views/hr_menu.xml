@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <menuitem id="menu_hr_root" name="IT HR System" />
+        <menuitem id="menu_hr_employee" name="ITU Employees" parent="menu_hr_root"
+            action="action_employee" />
+        <menuitem id="menu_hr_department" name="ITU Departments" parent="menu_hr_root"
+            action="action_department"
+            sequence="20" />
+
+    </data>
+
+</odoo>

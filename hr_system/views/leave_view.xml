@@ -1,0 +1,46 @@
+<!-- <odoo>
+    <data>
+        <record>
+            <id>view_form_x_hr_leave</id>
+            <model>ir.ui.view</model>
+            <field name="name">x_hr.leave.form</field>
+            <field name="model">x_hr.leave</field>
+            <field name="arch" type="xml">
+                <form string="Leave Request">
+                    <sheet>
+                        <group>
+                            <field name="employee_id" />
+                            <field name="leave_type_id" />
+                            <field name="start_date" />
+                            <field name="end_date" />
+                            <field name="state" readonly="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record>
+            <id>view_tree_x_hr_leave</id>
+            <model>ir.ui.view</model>
+            <field name="name">x_hr.leave.tree</field>
+            <field name="model">x_hr.leave</field>
+            <field name="arch" type="xml">
+                <tree string="Leave Requests">
+                    <field name="employee_id" />
+                    <field name="leave_type_id" />
+                    <field name="start_date" />
+                    <field name="end_date" />
+                    <field name="state" />
+                </tree>
+            </field>
+        </record>
+        <record>
+            <id>action_x_hr_leave</id>
+            <model>ir.actions.act_window</model>
+            <field name="name">Leave Requests</field>
+            <field name="res_model">x_hr.leave</field>
+            <field name="view_mode">tree,form</field>
+            <field name="target">current</field>
+        </record>
+    </data>
+</odoo> -->
