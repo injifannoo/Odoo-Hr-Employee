@@ -4,7 +4,7 @@
 #     _name = 'x_hr.leave'
 #     _description = 'Leave Request'
 
-#     employee_id = fields.Many2one('hr.employee', required=True)
+#     employee_id = fields.Many2one('hr_system.employee', required=True)
 #     start_date = fields.Date(required=True)
 #     end_date = fields.Date(required=True)
 #     reason = fields.Text()
